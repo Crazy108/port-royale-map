@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Port Royale 3 Map Offline</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link type="text/css" rel="stylesheet" media="all" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="assets/fa/css/fontawesome.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js" defer></script>
+    <script type="text/javascript" src="js/bootstrap.min.js" defer></script>
+
+
+
+    <!--    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+<!--    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap"></script>-->
+    <script type="text/javascript" src="js/pr3map.map.js" defer></script>
+
+</head>
+<body onloadZ="MapLoad();">
+    <div id="pageHeader">
+        <div class="container">
+            <button class="btn-info">Test</button>
+            <button class="btn-primary">Test</button>
+            <button class="btn-link">Test</button>
+            <button class="btn-success">Test</button>
+            <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#infoModal">Info</button>
+        </div>
+    </div>
+
+    <div id="pageContent">
+        <div id="map">InsideMap</div>
+    </div>
+
+    <div id="pageBottom">
+        <div class="container">
+            <div class="copyright">
+                <span class="copy">&copy</span><span>2019 full public media</span>
+            </div>
+            <div class="socialIcons">
+                <a href="javascript:void(0)" class="fa fa-facebook-square"></a>
+                <a href="javascript:void(0)" class="fa fa-twitter-square"></a>
+                <a href="javascript:void(0)" class="fa fa-google-plus-square"></a>
+                <a href="javascript:void(0)" class="fa fa-google-play"></a>
+                <a href="javascript:void(0)" class="fa fa-linkedin"></a>
+                <a href="javascript:void(0)" class="fa fa-youtube"></a>
+                <a href="javascript:void(0)" class="fa fa-instagram"></a>
+                <a href="javascript:void(0)" class="fa fa-pinterest-square"></a>
+                <a href="javascript:void(0)" class="fa fa-reddit-square"></a>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+    <div id="infoModal" class="modal fade" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content tl tc tr">
+
+                <div class="modal-data">
+                    sdfsdfsdf
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Hafenmap (world 11)</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <b>Description</b><br/>
+                            Web map for Haven & Hearth.<br/>
+                            Using tileset from Odditown Haven World Map.<br/>
+                            Markers loading from google spreadsheet.<br/>
+                        </p>
+                        <p>
+                            <b>For advanced users</b><br/>
+                            You can copy spreadsheet, add your points of interest, share for everyone with link and specify your spreadsheet id in url.<br/>
+                            e.g. &spreadsheet=14-zDmLOtP9K4G6t4DdbE0WibPVPG27WLdfkDYaLqhB0<br/>
+                            You also can upload your tileset on any hosting and change tileset in url for load your land and caves layers.<br/>
+                            e.g. &tileset=http://hafenmap-jodd.rhcloud.com/tiles/<br/>
+                            Save modified url as bookmark for easy access.<br/>
+                        </p>
+                        <p>
+                            <b>GitHub</b><br/>
+                            <a href="https://github.com/joddude/hafenmap" target="blank">https://github.com/joddude/hafenmap</a>
+                        </p>
+                        <p>
+                            <b>Hafenmap forum thread</b><br/>
+                            <a href="http://www.havenandhearth.com/forum/viewtopic.php?f=49&t=51908" target="blank">http://www.havenandhearth.com/forum/viewtopic.php?f=49&t=51908</a>
+                        </p>
+                        <p>
+                            <b>Haven & Hearth game portal</b><br/>
+                            <a href="http://www.havenandhearth.com/portal/" target="blank">http://www.havenandhearth.com/portal/</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

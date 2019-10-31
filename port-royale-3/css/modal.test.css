@@ -1,0 +1,67 @@
+
+.modal-content {
+    /*font-family: 'Jim Nightshade', cursive;*/
+
+    /*-moz-background-size: 100%; !* Firefox 3.6+ *!*/
+    /*-webkit-background-size: 100%; !* Safari 3.1+ и Chrome 4.0+ *!*/
+    /*-o-background-size: 100%; !* Opera 9.6+ *!*/
+    /*background-size: 100%; !* Современные браузеры *!*/
+    /*background-color: transparent;*/
+    /**/
+    /*box-shadow: none;*/
+    /*border:none !important;*/
+}
+
+.modal-header, .modal-title {font-size: 26pt;}
+.modal-body {font-size: 16pt;}
+
+.modal-backdrop{opacity: 0 !important; background-color: transparent;}
+
+
+.modal-content2 {
+
+    /*background:*/
+    /*        url("https://mdn.mozillademos.org/files/11987/startransparent.gif") #FFEE99 2.5cm bottom no-repeat ,*/
+    /*        url("https://mdn.mozillademos.org/files/11987/startransparent.gif") #FFEE99 2.5cm top no-repeat;*/
+
+    background:
+            url('../images/contentbg.png') -200px -304px no-repeat,
+            url('../images/contentbg.png') -200px -304px no-repeat,
+            url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==')
+
+;
+    background-position:
+            left 0px top 0px, right 0px bottom 20px;
+;
+
+}
+.modal-contentZZ {
+    background: #B7A28D url('../images/contentbg.png') no-repeat
+}
+.modal_bg_tl {
+    background:url('../images/contentbg.png') -200px -304px no-repeat;
+    #background-position: bottom right;
+}
+
+.modal-content {
+    overflow:hidden; /* wrap floats */
+    /*height:12px;*/
+    font-size:1px; /* prevent IE smallest height bug */
+    background:url('https://cutcodedown.com/for_others/antonyx/images/borders.png') 0 -84px no-repeat;
+}
+.modal-content .modal-data .borderFirstSide {
+    padding-left:1px;
+    background:url('https://cutcodedown.com/for_others/antonyx/images/borders.png') -1280px 0 repeat-y;
+}
+
+.modal-content .modal-data .borderSecondSide {
+    padding:1em 7px 0 0;
+    background:url('https://cutcodedown.com/for_others/antonyx/images/borders.png') top right repeat-y;
+}
+
+.modal-content .modal-data .borderBottom {
+    overflow:hidden; /* wrap floats */
+    height:12px;
+    font-size:1px; /* prevent IE smallest height bug */
+    background:url('https://cutcodedown.com/for_others/antonyx/images/borders.png') 0 -84px no-repeat;
+}
