@@ -1,5 +1,8 @@
 language: generic
 
+env:
+  GOOGLE_MAP_KEY: $GOOGLE_MAP_KEY
+
 deploy:
   provider: pages
   skip_cleanup: true
