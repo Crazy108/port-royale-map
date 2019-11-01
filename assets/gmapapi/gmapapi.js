@@ -75,12 +75,13 @@ function initMap()
             minX = allowedBounds.getSouthWest().lng(),
             minY = allowedBounds.getSouthWest().lat();
 
-        if (x < minX) x = minX;
-        if (x > maxX) x = maxX;
-        if (y < minY) y = minY;
-        if (y > maxY) y = maxY;
-
-        map.setCenter(new google.maps.LatLng(y, x));
+        if(x < minX || x > maxX || y < minY || y > maxY) {
+            if (x < minX) x = minX;
+            if (x > maxX) x = maxX;
+            if (y < minY) y = minY;
+            if (y > maxY) y = maxY;
+            map.setCenter(new google.maps.LatLng(y, x));
+        }
     }
 }
 
