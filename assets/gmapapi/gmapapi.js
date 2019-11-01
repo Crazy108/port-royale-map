@@ -3,7 +3,7 @@ var markersArray = [];
 
 ;(function (window) {
     var script = document.createElement('script');
-    script.src = "https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap&key=AIzaSyAs5bgu51NbSE7w5XB0bf4tg1_NdTSY7qM";
+    script.src = "https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap";
     document.head.appendChild(script);
 }(window))
 
