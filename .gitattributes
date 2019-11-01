@@ -1,0 +1,7 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Example of a `.gitattributes` file which reclassifies `.rb` files as Java:
+*.js linguist-language=JavaScript
+*.css linguist-language=CSS
+*.sh linguist-language=Shell
