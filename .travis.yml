@@ -1,5 +1,4 @@
-language: html
-language: php
+language: generic
 
 deploy:
   provider: pages
@@ -7,5 +6,10 @@ deploy:
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   project_name: Port Royale 3 Offline Map
+  local-dir: port-royale-3
   on:
     branch: master
+  notifications:
+    email:
+      on_success: never
+      on_failure: always
