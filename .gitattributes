@@ -2,6 +2,7 @@
 * text=auto
 
 # Example of a `.gitattributes` file which reclassifies `.rb` files as Java:
+*.html linguist-language=HTML
 *.js linguist-language=JavaScript
 *.css linguist-language=CSS
 *.sh linguist-language=Shell
