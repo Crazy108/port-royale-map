@@ -1,13 +1,12 @@
 //http://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap
 var script = document.createElement('script');
-script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap";
+script.src = "https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap";
 document.head.appendChild(script);
 
 var map = 0;
 var markersArray = [];
 
 function initMap() {
-    console.log('INIT MAP HERE!!!!!!!!!!');
     MapLoad();
 }
 
