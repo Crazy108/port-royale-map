@@ -1,10 +1,12 @@
 language: generic
 
-script: bash ./deploy.sh
 env:
   global:
     - GOOGLE_MAP_KEY: $GOOGLE_MAP_KEY
 
+
+
+script: bash ./port-royale-3/deploy.sh
 deploy:
   provider: pages
   skip_cleanup: true
