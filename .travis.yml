@@ -1,7 +1,9 @@
 language: generic
 
+script: bash ./deploy.sh
 env:
-  GOOGLE_MAP_KEY: $GOOGLE_MAP_KEY
+  global:
+    - GOOGLE_MAP_KEY: $GOOGLE_MAP_KEY
 
 deploy:
   provider: pages
