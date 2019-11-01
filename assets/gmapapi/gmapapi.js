@@ -1,15 +1,13 @@
-var script = document.createElement('script');
-script.src = "https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap&key=AIzaSyAs5bgu51NbSE7w5XB0bf4tg1_NdTSY7qM";
-document.head.appendChild(script);
-
 var map = 0;
 var markersArray = [];
 
-function initMap() {
-    MapLoad();
-}
+;(function (window) {
+    var script = document.createElement('script');
+    script.src = "https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap&key=AIzaSyAs5bgu51NbSE7w5XB0bf4tg1_NdTSY7qM";
+    document.head.appendChild(script);
+}(window))
 
-function MapLoad()
+function initMap()
 {
     // Define our custom map type
     var customMapType = new google.maps.ImageMapType({
@@ -53,10 +51,6 @@ function MapLoad()
     */
 
     var allowedBounds = new google.maps.LatLngBounds(
-        new google.maps.LatLng(-77, -174.375),
-        new google.maps.LatLng(77, 174.375)
-    );
-    var allowedBounds = new google.maps.LatLngBounds(
         new google.maps.LatLng(-77, -134.375),
         new google.maps.LatLng(77, 134.375)
     );
@@ -69,12 +63,10 @@ function MapLoad()
     google.maps.event.addListener(map, 'drag', checkAllowedBounds);
     google.maps.event.addListener(map, 'zoom_changed', checkAllowedBounds);
 
-    // Listen for the dragend event
-    google.maps.event.addListener(map, 'drag', function() {
+    function checkAllowedBounds(event) {
         if (allowedBounds.contains(map.getCenter())) return;
 
         // We're out of bounds - Move the map back within the bounds
-
         var c = map.getCenter(),
             x = c.lng(),
             y = c.lat(),
@@ -89,14 +81,6 @@ function MapLoad()
         if (y > maxY) y = maxY;
 
         map.setCenter(new google.maps.LatLng(y, x));
-    });
-
-
-
-    function checkAllowedBounds(event) {
-        console.log(event);
-
-        console.log('Bounds changed. NEW!!!');
     }
 }
 
